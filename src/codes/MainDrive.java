@@ -5,7 +5,14 @@ import java.util.Scanner;
 public class MainDrive {
 
 	public static void main(String[] args) {
+				
 //깃허브 연동 프로젝트
+		
+//미리 당첨번호 설정.
+		
+		int[] winNumbers = {9, 18, 19, 30, 34, 40};
+//보너스 번호 : 5개 맞춘 경우에만 활용을 한다.
+		int bonusNum = 20;
 
 		Scanner scan = new Scanner(System.in);
 
