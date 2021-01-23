@@ -140,6 +140,26 @@ public class MainDrive {
 
 		else if (correctNumCount == 5) {
 //보너스 번호를 맞췄는지? 추가검사		
+//못 찾은 상태로 초기화 => 보너스번호를 찾으면 true로 바꾸자			
+			boolean isBounsNumOk = false;
+
+//내 번호 목록을 다시 돌아보면서 => 보너스번호와 비교를 하여 보자.
+			for (int myNum : myLottoNums) {
+				if (myNum == bonusNum) {
+
+//보너스 번호 맞춤으로 설정					
+					isBounsNumOk = true;
+				}
+			}
+
+//보너스 당첨 여부에 따라 등수가 갈린다.
+			if (isBounsNumOk) {
+				System.out.println("2등");
+			}
+
+			else {
+				System.out.println("3등");
+			}
 		}
 
 		else if (correctNumCount == 4) {
