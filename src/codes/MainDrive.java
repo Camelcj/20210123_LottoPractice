@@ -28,7 +28,25 @@ public class MainDrive {
 				// 1 ~ 45 사이 : 1보다는 크거나 같고, 동시에 45보다는 작거나 같다.
 
 				boolean isRangeOk = (1 <= inputNum && inputNum <= 45);
-
+				
+				//추가검사를 하겠다 중복인지 아닌지
+				//중복인가 ? - 내가 입력한 숫자가 이미 배열 안에 들어있다면? 중복(사용 불가)
+				//중복검사 결과
+				//써도 괜찮다고 했다가, 배열 안에서 같은 숫자를 발견한다면 쓰면 안된다.
+				boolean isDupleOk = true;
+				
+				//배열 안에 숫자를 모두 꺼내보자.
+				for (int myNum : myLottoNums) {
+				//입력한 값과 myNum이 같은지? => 같다면 중복검사 탈락.
+					
+					if(inputNum == myNum) {
+					//중복값을 발견 ! 검사 탈락처리
+						isDupleOk = false;
+						break;
+					//중복이 확정되면 for문 종료	
+					}
+				}
+				
 				// 그 결과가 OK일때만 배열에 저장한다.
 
 				if (isRangeOk) {
