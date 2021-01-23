@@ -49,7 +49,7 @@ public class MainDrive {
 				
 				// 그 결과가 OK일때만 배열에 저장한다.
 
-				if (isRangeOk) {
+				if (isRangeOk && isDupleOk) {
 
 					// 입력받은 숫자를 배열에 저장
 					myLottoNums[i] = inputNum;
