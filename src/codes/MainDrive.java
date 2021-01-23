@@ -21,7 +21,10 @@ public class MainDrive {
 			myLottoNums[i] = inputNum;
 		}
 		
-		
+//저장된 값을 출력을 해보자
+		for (int myNum : myLottoNums) {
+			System.out.println(myNum);
+		}
 				
 	}
 }
