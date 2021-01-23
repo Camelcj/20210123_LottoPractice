@@ -40,6 +40,12 @@ public class MainDrive {
 					// 다음 자리의 숫자를 받으러 이동.
 					break;
 				}
+				
+				else {
+					//검사의 실패한 경우
+					//안내 메세지로 보여주자
+					System.out.println("잘못된 숫자 입니다. 다시 입력해주세요");
+				}
 			}
 
 //입력 받은 숫자를 배열에 저장			
