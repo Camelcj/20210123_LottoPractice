@@ -59,10 +59,15 @@ public class MainDrive {
 					break;
 				}
 				
+				else if(!isRangeOk){
+					//범위 검사에 실패를 했다면
+					System.out.println("1 ~ 45의 숫자로만 입력 가능 합니다.");
+				}
+				
 				else {
-					//검사의 실패한 경우
-					//안내 메세지로 보여주자
-					System.out.println("잘못된 숫자 입니다. 다시 입력해주세요");
+					//범위 검사는 맞았다면
+					System.out.println("이미 입력된 번호입니다.");
+					System.out.println("다른 숫자로 입력해주세요");
 				}
 			}
 
